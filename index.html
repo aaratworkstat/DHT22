@@ -33,7 +33,7 @@
         temprature.on("value", (snap) => {
                 snap.forEach((child) => {
                     let data = child.val()
-                    // console.log(data)
+                    console.log(data)
                     const values = Object.values(data)
                     values.reverse();
                     // console.log(values)
@@ -42,7 +42,7 @@
                             <div>
                                 <center>
                                     <p>
-                                        Temprature: ${values[i].Temprature}&deg;C &emsp; &emsp; Humidity: ${values[i].Humidity}&percnt;
+                                        Temprature: ${values[i].Temprature}&deg;C &emsp; &emsp; Humidity: ${values[i].Humidity}&percnt; &emsp; &emsp; Date: ${values[i].Date} &emsp; &emsp; Time: ${values[i].Time}
                                     </p>
                                 </center>
                             </div>
